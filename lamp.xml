@@ -1,0 +1,10 @@
+<prefab version="1.4.0">
+	<group name="instance=MOD/lamp.xml" pos="0.0 0.0 0.0" rot="0.0 0.0 0.0">
+		<script pos="0.0 0.0 0.0" file="MOD/script/light.lua" param0="buttonTag=triggermain1" param1="lampStartSound=MOD/sounds/lampStarts5.ogg">
+			<vox tags="body nocull" pos="-0.1 0.05 0.1" rot="0.0 0.0 0.0" texture="1 0.4" file="MOD/vox/components.vox" object="lamp1">
+				<light tags="light nocull" pos="0.05 -0.05 -0.05" rot="90 0 0" type="area" color="1.0 1.0 1.0" scale="7" sound="MOD/main/SOUND/lightHum.ogg"/>
+			</vox>
+		</script>
+	</group>
+</prefab>
+

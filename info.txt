@@ -1,0 +1,4 @@
+name = BACKROOMS
+author = Tislericsm, Deffcolony
+description = Immerse yourself in the heart of the Backrooms. Explore the enigmatic Async research lab and traverse five distinct Backroom levels. Navigate through these treacherous terrains while encountering the Async researchers and confronting the formidable Bacteria Behemoth boss.
+tags=

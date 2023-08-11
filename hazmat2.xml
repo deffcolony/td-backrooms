@@ -1,0 +1,60 @@
+<prefab version="1.4.0">
+	<group name="instance=MOD/hazmat2.xml" pos="-10.7 3.3 23.8" rot="0.0 -180.0 0.0">
+		<script pos="0.1 0.0 -0.1" rot="0.0 90.0 0.0" file="MOD/script/robot.lua" param0="type=investigate chase">
+			<body name="body" tags="body" pos="-0.05 1.0 0.0" rot="0.0 0.0 0.0" dynamic="true">
+				<vox tags="nocull unbreakable" pos="0.05 -0.15 0.1" rot="0 180 0" texture="1 0.5" density="10" strength="999999999999999999999999999" file="MOD/vox/components.vox" object="hbody"/>
+			</body>
+			<body name="head" tags="head" pos="-0.1 1.1 -0.1" rot="0.0 0.0 0.0" dynamic="true">
+				<joint name="head_joint" tags="head" pos="0.05 0.2 0.2" rot="-90.0 90.0 0.0" type="hinge" size="0.15" limits="-45 45"/>
+				<script pos="0.1 -0.1 0.2" file="MOD/script/fxmy.lua">
+					<vox tags="nocull fxbreak=l4red target unbreakable" pos="0.0 0.15 0.0" rot="0 180 0" texture="1 0.5" density="0.25" strength="999999999999999999999999999" file="MOD/vox/components.vox" object="hhead">
+						<vox tags="target1" pos="0.0 1.0 0.0" texture="12 0.8" strength="999999999999999999999999999" file="MOD/vox/components.vox" object="trg1"/>
+						<vox tags="target2" pos="0.1 0.6 0.1" texture="12 0.8" strength="999999999999999999999999999" file="MOD/vox/components.vox" object="trg1"/>
+						<vox tags="target3" pos="-0.1 0.3 -0.1" texture="12 0.8" strength="999999999999999999999999999" file="MOD/vox/components.vox" object="trg1"/>
+					</vox>
+				</script>
+				<body pos="1.2 0.0 0.05" dynamic="true">
+					<vox tags="unbreakable" pos="-0.64 -0.08 0.2" rot="10 180 -5" texture="1 0.5" density="0.25" strength="99999999999999999999999" file="MOD/vox/components.vox" object="harml">
+						<joint pos="0.1 0.8 -0.15" rot="0 -90 0" type="hinge" rotstrength="0.0005" limits="-15 15"/>
+					</vox>
+				</body>
+				<body pos="0.0 0.0 1.2" dynamic="true">
+					<vox tags="unbreakable" pos="-0.5 -0.48 -1.05" rot="0.0 -179.10001 4.9" texture="1 0.5" density="0.2" strength="999" file="MOD/vox/components.vox" object="hbag1"/>
+				</body>
+				<body dynamic="true">
+					<vox tags="unbreakable" pos="-0.46 -0.08 0.25" rot="10 180 5" texture="1 0.5" density="0.25" strength="99999999999999999999999" file="MOD/vox/components.vox" object="harmr2">
+						<joint pos="-0.1 0.8 -0.15" rot="0 90 0" type="hinge" rotstrength="0.001" limits="-15 15"/>
+						<joint tags="joint" pos="0.0 0.0 0.1" rot="0 90 0" type="hinge" rotstrength="0.001" limits="-15 15"/>
+					</vox>
+				</body>
+			</body>
+			<group name="l_leg" pos="-0.35 -0.1 0.0">
+				<body name="l_leg" tags="leg" pos="0.3 0.5 0.0" rot="0.0 0.0 0.0" dynamic="true">
+					<vox tags="nocull unbreakable" pos="-0.12 0.15 0.1" rot="0 180 0" texture="1 0.5" density="0.25" strength="999999999999999999999999999" file="MOD/vox/components.vox" object="hlegupr">
+						<joint name="r_leg_joint" pos="0.05 0.45 0.05" rot="0.0 90.0 -90" type="hinge" size="0.15" limits="-30 30"/>
+						<vox tags="target5" pos="0.0 0.2 0.1" texture="12 0.8" strength="999999999999999999999999999" file="MOD/vox/components.vox" object="trg2"/>
+					</vox>
+				</body>
+				<body name="l_foot" tags="foot" pos="0.3 0.1 -0.0" rot="0.0 0.0 0.0" dynamic="true">
+					<vox tags="nocull unbreakable" pos="-0.12 0.0 0.05" rot="0 180 0" texture="1 0.6" strength="999999999999999999999999999" file="MOD/vox/components.vox" object="hlegdownr">
+						<joint name="l_foot_joint" pos="0.05 0.55 0.05" rot="0.0 90.0 -90.0" type="hinge" size="0.15" rotstrength="0" rotspring="0" limits="-5 80"/>
+					</vox>
+				</body>
+			</group>
+			<group name="r_leg" pos="0.25 -0.1 0.0">
+				<body name="r_leg" tags="leg" pos="-0.4 0.4 0.1" rot="0.0 0.0 0.0" dynamic="true">
+					<vox tags="nocull unbreakable" pos="0.32 0.25 0.0" rot="0 180 0" texture="1 0.5" density="0.25" strength="999999999999999999999999999" file="MOD/vox/components.vox" object="hlegupl">
+						<joint name="r_leg_joint" pos="0.05 0.45 0.05" rot="0.0 90.0 -90" type="hinge" size="0.15" limits="-30 30"/>
+						<vox tags="target4" pos="0.0 0.2 0.1" texture="12 0.8" strength="999999999999999999999999999" file="MOD/vox/components.vox" object="trg2"/>
+					</vox>
+				</body>
+				<body name="r_foot" tags="foot" pos="-0.3 0.1 0.1" rot="0.0 0.0 0.0" dynamic="true">
+					<vox tags="nocull unbreakable" pos="0.22 0.0 -0.05" rot="0 180 0" texture="1 0.6" strength="999999999999999999999999999" file="MOD/vox/components.vox" object="hlegdownl">
+						<joint name="r_foot_joint" pos="0.05 0.55 0.05" rot="0.0 90.0 -90" type="hinge" size="0.15" rotstrength="0" rotspring="0" limits="-5 80"/>
+					</vox>
+				</body>
+			</group>
+		</script>
+	</group>
+</prefab>
+
