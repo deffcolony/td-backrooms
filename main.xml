@@ -914,7 +914,6 @@
 				<vox pos="-1.7 0.2 0.0" rot="0.0 180.0 0.0" texture="1 0.3" file="MOD/vox/components.vox" object="makett"/>
 				<vox pos="-3.4 0.2 7.1" rot="0.0 70.0 0.0" texture="14" prop="true" file="MOD/vox/components.vox" object="boss"/>
 				<vox pos="-2.0 0.2 7.4" rot="0.0 180.0 0.0" texture="14" prop="true" file="MOD/vox/bedroom_oldie.vox" object="tv_table"/>
-				<vox pos="4.8 0.2 2.05" rot="0.0 -90.0 0.0" texture="14" prop="true" file="MOD/vox/office_murky.vox" object="desk"/>
 				<group name="control panel" pos="4.8 0.2 5.6">
 					<vox pos="-0.3 0.0 -0.5" rot="0.0 -90.0 0.0" texture="14" file="MOD/vox/office_murky.vox" object="ctable"/>
 					<group pos="-0.6 1.1 -0.6">
@@ -950,20 +949,21 @@
 					<vox pos="-0.55 1.0 -0.1" rot="30.0 -90.0 0.0" texture="14" file="MOD/vox/office_murky.vox" object="ctable3"/>
 					<vox pos="-0.14 1.005 -0.5" rot="-20.0 -90.0 0.0" texture="14" file="MOD/vox/office_murky.vox" object="ctable2"/>
 				</group>
-				<vox pos="3.6 0.2 1.9" rot="0.0 80.0 0.0" texture="14" prop="true" file="MOD/vox/office_murky.vox" object="chair_boss"/>
 				<vox pos="3.0 0.2 5.6" rot="0.0 100.0 0.0" texture="14" prop="true" file="MOD/vox/office_murky.vox" object="chair_boss"/>
-				<group pos="4.8 1.2 1.8" rot="0.0 90.0 0.0">
+				<group name="computer desk" pos="4.8 5.3 1.8" rot="0.0 90.0 0.0">
 					<vox pos="0.1 0.0 0.2" rot="0.0 -175.0 0.0" texture="14" prop="true" file="MOD/vox/office_supplies.vox" object="monitor_crt"/>
 					<vox pos="0.2 0.0 -0.4" rot="0.0 -180.0 0.0" texture="14" prop="true" file="MOD/vox/office_supplies.vox" object="keyboard"/>
 					<vox pos="-0.4 0.0 -0.3" rot="0.0 170.0 0.0" texture="14" prop="true" file="MOD/vox/office_supplies.vox" object="mouse"/>
+					<vox pos="-1.0 0.0 0.1" rot="0.0 -80.0 0.0" texture="14" prop="true" file="MOD/vox/office_supplies.vox" object="paperbox"/>
+					<vox pos="-0.3 -1.0 0.05" rot="0.0 -180.0 0.0" texture="14" prop="true" file="MOD/vox/office_murky.vox" object="desk"/>
+					<vox pos="-0.5 -1.0 -0.1" rot="0.0 -180.0 0.0" texture="14" prop="true" file="MOD/vox/office_supplies.vox" object="computer"/>
+					<vox pos="0.0 -1.0 -1.1" rot="0.0 -10.0 0.0" texture="14" prop="true" file="MOD/vox/office_murky.vox" object="chair_boss"/>
 				</group>
 				<vox pos="2.0 1.7 8.1" rot="0.0 180.0 0.0" texture="14" file="MOD/vox/office_supplies.vox" object="whiteboard"/>
-				<vox pos="5.0 1.2 2.7" rot="0.0 -80.0 0.0" texture="14" prop="true" file="MOD/vox/office_supplies.vox" object="paperbox"/>
 				<vox pos="-2.8 0.8 -15.1" rot="0.0 -80.0 0.0" texture="14" prop="true" file="MOD/vox/office_supplies.vox" object="paperbox"/>
 				<vox pos="-6.9 -4.9 -12.5" rot="0.0 -80.0 0.0" texture="14" prop="true" file="MOD/vox/office_supplies.vox" object="paperbox"/>
 				<vox pos="-0.3 -4.3 -3.1" rot="0.0 -100.0 0.0" texture="14" prop="true" file="MOD/vox/office_supplies.vox" object="paperbox"/>
 				<vox pos="3.1 -4.2 1.2" rot="0.0 -50.0 0.0" texture="14" prop="true" file="MOD/vox/office_supplies.vox" object="paperbox"/>
-				<vox pos="4.6 0.2 2.3" rot="0.0 -90.0 0.0" texture="14" prop="true" file="MOD/vox/office_supplies.vox" object="computer"/>
 				<vox pos="1.1 0.2 -4.8" rot="0.0 -90.0 0.0" texture="14" prop="true" file="MOD/vox/office_supplies.vox" object="printer"/>
 				<vox pos="1.3 0.2 -2.3" rot="0.0 -90.0 0.0" texture="14" prop="true" file="MOD/vox/potted_plants.vox" object="small_white"/>
 				<vox pos="-4.8 0.2 7.5" rot="0.0 -90.0 0.0" texture="14" prop="true" file="MOD/vox/potted_plants.vox" object="small_white"/>
@@ -986,6 +986,58 @@
 				<script pos="-46.2 -3.9 -10.6" file="MOD/script/button.lua" param0="triggerTag=triggermainportal1">
 					<vox tags="triggermainportal1 interact lightTrig" pos="40.85 5.6 15.25" rot="0.0 90.0 0.0" texture="14" file="MOD/vox/extra.vox" object="trigger2"/>
 				</script>
+				<group name="instance=MOD/prefabs/vmdesktop.xml" pos="2.9 0.2 2.0" rot="0.0 90.0 0.0">
+					<vox pos="0.6 0.0 0.0" rot="0.0 180.0 0.0" texture="1 0.25" density="3" prop="true" file="MOD/vox/room.vox" object="desk">
+						<vox pos="0.1 0.1 -0.7" texture="1 0.25" prop="true" file="MOD/vox/room.vox" object="desk-drawer">
+							<joint pos="0.0 0.1 0.3" rot="0.0 90.0 0.0" type="prismatic" limits="0 .5"/>
+							<joint pos="0.0 0.1 -0.3" rot="0.0 90.0 0.0" type="prismatic" limits="0 .5"/>
+							<vox pos="0.0 0.2 0.05" prop="true" file="MOD/vox/room.vox" object="paper"/>
+							<vox pos="0.0 0.1 0.05" prop="true" file="MOD/vox/room.vox" object="paper"/>
+						</vox>
+						<vox pos="0.1 0.5 -0.7" texture="1 0.25" prop="true" file="MOD/vox/room.vox" object="desk-drawer">
+							<joint pos="0.0 0.1 0.3" rot="0.0 90.0 0.0" type="prismatic" limits="0 .5"/>
+							<joint pos="0.0 0.1 -0.3" rot="0.0 90.0 0.0" type="prismatic" limits="0 .5"/>
+							<vox pos="0.0 0.1 0.05" prop="true" file="MOD/vox/room.vox" object="paper"/>
+							<vox pos="0.0 0.2 0.05" prop="true" file="MOD/vox/room.vox" object="paper"/>
+						</vox>
+						<vox pos="-0.0 0.9 -0.75" rot="0.0 20.0 0.0" prop="true" file="MOD/vox/room.vox" object="paper"/>
+						<vox pos="-0.0 1.0 -0.85" rot="0.0 180.0 0.0" prop="true" file="MOD/vox/room.vox" object="paper"/>
+						<vox pos="0.0 1.1 -0.85" rot="0.0 -170.0 0.0" prop="true" file="MOD/vox/room.vox" object="paper"/>
+					</vox>
+					<vox pos="-0.1 0.0 -0.1" rot="0.0 -150.0 0.0" texture="1 0.25" density="3" prop="true" file="MOD/vox/room.vox" object="officechair-stand">
+						<vox pos="0.0 0.3 -0.0" rot="0.0 0.0 0.0" texture="1 0.25" density="3" prop="true" file="MOD/vox/room.vox" object="officechair-seat">
+							<vox pos="0.2 0.2 0.0" rot="0.0 0.0 -10.0" texture="1 0.25" density="3" file="MOD/vox/room.vox" object="officechair-backrest"/>
+						</vox>
+						<joint pos="0.05 0.3 -0.05" rot="-90.0 0.0 0.0" type="hinge" rotstrength="0.0001" rotspring="0"/>
+					</vox>
+					<vox pos="0.5 0.0 -0.7" rot="0.0 -90.0 0.0" density="3" strength="3" prop="true" file="MOD/vox/electronics.vox" object="computertower1"/>
+					<vox pos="0.3 0.9 -0.4" rot="0.0 -80.0 0.0" prop="true" file="MOD/vox/electronics.vox" object="keyboard"/>
+					<vox pos="0.6 0.9 0.1" rot="0.0 -60.0 0.0" prop="true" file="MOD/vox/electronics.vox" object="mouse"/>
+					<group name="Monitor1" pos="0.7 0.9 -0.4" rot="0.0 -70.0 0.0">
+						<script rot="-5.0 0.0 0.0" file="MOD/scripts/InteractWithScreen.lua">
+							<body name="monitor1" pos="0.0 0.0 0.0" rot="5.0 0.0 0.0" dynamic="true">
+								<vox pos="-0.05 0.0 0.0" density="5" strength="3" prop="true" file="MOD/vox/electronics.vox" object="monitor1-stand">
+									<joint pos="0.05 0.4 -0.1" rot="0.0 90.0 0.0" type="hinge" size="0.2" rotstrength="1" rotspring="0.25" limits="-5 5"/>
+								</vox>
+								<group pos="0.0 0.4 -0.1" rot="-5.0 0.0 0.0">
+									<vox pos="-0.05 -0.1 0.175" rot="0.0 0.0 0.0" density="5" strength="3" file="MOD/vox/electronics.vox" object="monitor1-screen">
+										<screen tags="screen password=async username=User#18002 userIcon=1 state=office" pos="0.05 0.25 0.0" rot="0.0 0.0 0.0" size="0.7 0.5" bulge="0.025" resolution="1024 712" script="MOD/scripts/DesktopScreen.lua" enabled="true" interactive="true" fxraster="0.1" fxnoise="0.1">
+											<light type="area" scale="0.2" size="0.7 0.5"/>
+										</screen>
+									</vox>
+									<vox pos="-0.05 -0.2 0.1" rot="0.0 0.0 0.0" density="3" strength="3" file="MOD/vox/electronics.vox" object="monitor1-frame-on">
+										<vox pos="-0.4 0.4 0.2" rot="-10.2 -11.8 -9.8" desc="Password: async" prop="true" file="MOD/vox/room.vox" object="sticknote"/>
+									</vox>
+								</group>
+							</body>
+							<rope tags="required" pos="-0.2 0.407 -0.065" rot="5.0 0.0 0.0" slack="1" strength="25" maxstretch="0.1">
+								<location pos="0.0 0.0 0.0" rot="0.0 0.0 0.0"/>
+								<location pos="-0.0 -1.1 -0.2" rot="0.0 0.0 0.0"/>
+							</rope>
+						</script>
+					</group>
+				</group>
+				<vox pos="4.8 0.2 1.5" rot="0.0 -90.0 0.0" texture="14" prop="true" file="MOD/vox/potted_plants.vox" object="small_white"/>
 			</vox>
 			<vox pos="0.5 0.0 -6.1" texture="25" file="MOD/vox/components.vox" object="celevator2"/>
 			<trigger pos="0.0 0.0 0.0" type="box" size="9 10 10" sound="MOD/sounds/teleport2.ogg 0.7" soundramp="13"/>

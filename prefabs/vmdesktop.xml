@@ -1,0 +1,54 @@
+<prefab version="1.4.0">
+	<group pos="2.1 0.6 2.5" rot="0.0 -20.0 0.0">
+		<vox pos="0.6 0.0 0.0" rot="0.0 180.0 0.0" texture="1 0.25" density="3" prop="true" file="MOD/vox/room.vox" object="desk">
+			<vox pos="0.1 0.1 -0.7" texture="1 0.25" prop="true" file="MOD/vox/room.vox" object="desk-drawer">
+				<joint pos="0.0 0.1 0.3" rot="0.0 90.0 0.0" type="prismatic" limits="0 .5"/>
+				<joint pos="0.0 0.1 -0.3" rot="0.0 90.0 0.0" type="prismatic" limits="0 .5"/>
+				<vox pos="0.0 0.2 0.05" prop="true" file="MOD/vox/room.vox" object="paper"/>
+				<vox pos="0.0 0.1 0.05" prop="true" file="MOD/vox/room.vox" object="paper"/>
+			</vox>
+			<vox pos="0.1 0.5 -0.7" texture="1 0.25" prop="true" file="MOD/vox/room.vox" object="desk-drawer">
+				<joint pos="0.0 0.1 0.3" rot="0.0 90.0 0.0" type="prismatic" limits="0 .5"/>
+				<joint pos="0.0 0.1 -0.3" rot="0.0 90.0 0.0" type="prismatic" limits="0 .5"/>
+				<vox pos="0.0 0.1 0.05" prop="true" file="MOD/vox/room.vox" object="paper"/>
+				<vox pos="0.0 0.2 0.05" prop="true" file="MOD/vox/room.vox" object="paper"/>
+			</vox>
+			<vox pos="-0.0 0.9 -0.75" rot="0.0 20.0 0.0" prop="true" file="MOD/vox/room.vox" object="paper"/>
+			<vox pos="-0.0 1.0 -0.85" rot="0.0 180.0 0.0" prop="true" file="MOD/vox/room.vox" object="paper"/>
+			<vox pos="0.0 1.1 -0.85" rot="0.0 -170.0 0.0" prop="true" file="MOD/vox/room.vox" object="paper"/>
+		</vox>
+		<vox pos="-0.1 0.0 -0.1" rot="0.0 -150.0 0.0" texture="1 0.25" density="3" prop="true" file="MOD/vox/room.vox" object="officechair-stand">
+			<vox pos="0.0 0.3 -0.0" rot="0.0 0.0 0.0" texture="1 0.25" density="3" prop="true" file="MOD/vox/room.vox" object="officechair-seat">
+				<vox pos="0.2 0.2 0.0" rot="0.0 0.0 -10.0" texture="1 0.25" density="3" file="MOD/vox/room.vox" object="officechair-backrest"/>
+			</vox>
+			<joint pos="0.05 0.3 -0.05" rot="-90.0 0.0 0.0" type="hinge" rotstrength="0.0001" rotspring="0"/>
+		</vox>
+		<vox pos="0.5 0.0 -0.7" rot="0.0 -90.0 0.0" density="3" strength="3" prop="true" file="MOD/vox/electronics.vox" object="computertower1"/>
+		<vox pos="0.3 0.9 -0.4" rot="0.0 -80.0 0.0" prop="true" file="MOD/vox/electronics.vox" object="keyboard"/>
+		<vox pos="0.6 0.9 0.1" rot="0.0 -60.0 0.0" prop="true" file="MOD/vox/electronics.vox" object="mouse"/>
+		<group name="Monitor1" pos="0.7 0.9 -0.4" rot="0.0 -70.0 0.0">
+			<script rot="-5.0 0.0 0.0" file="MOD/scripts/InteractWithScreen.lua">
+				<body name="monitor1" pos="0.0 0.0 0.0" rot="5.0 0.0 0.0" dynamic="true">
+					<vox pos="-0.05 0.0 0.0" density="5" strength="3" prop="true" file="MOD/vox/electronics.vox" object="monitor1-stand">
+						<joint pos="0.05 0.4 -0.1" rot="0.0 90.0 0.0" type="hinge" size="0.2" rotstrength="1" rotspring="0.25" limits="-5 5"/>
+					</vox>
+					<group pos="0.0 0.4 -0.1" rot="-5.0 0.0 0.0">
+						<vox pos="-0.05 -0.1 0.175" rot="0.0 0.0 0.0" density="5" strength="3" file="MOD/vox/electronics.vox" object="monitor1-screen">
+							<screen tags="screen password=secret username=User#18002 userIcon=1 state=office" pos="0.05 0.25 0.0" rot="0.0 0.0 0.0" size="0.7 0.5" bulge="0.025" resolution="1024 712" script="MOD/scripts/DesktopScreen.lua" enabled="true" interactive="true" fxraster="0.1" fxnoise="0.1">
+								<light type="area" scale="0.2" size="0.7 0.5"/>
+							</screen>
+						</vox>
+						<vox pos="-0.05 -0.2 0.1" rot="0.0 0.0 0.0" density="3" strength="3" file="MOD/vox/electronics.vox" object="monitor1-frame-on">
+							<vox pos="-0.4 0.4 0.2" rot="-10.2 -11.8 -9.8" desc="Password: secret" prop="true" file="MOD/vox/room.vox" object="sticknote"/>
+						</vox>
+					</group>
+				</body>
+				<rope tags="required" pos="-0.2 0.407 -0.065" rot="5.0 0.0 0.0" slack="1" strength="25" maxstretch="0.1">
+					<location pos="0.0 0.0 0.0" rot="0.0 0.0 0.0"/>
+					<location pos="-0.0 -1.1 -0.2" rot="0.0 0.0 0.0"/>
+				</rope>
+			</script>
+		</group>
+	</group>
+</prefab>
+
