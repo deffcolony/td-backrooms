@@ -376,7 +376,7 @@
 					<group pos="3.4 5.3 9.4">
 						<vox pos="0.0 0.0 0.0" texture="1 0.6" prop="true" file="MOD/vox/components.vox" object="cprop1">
 							<vox tags="nocull" pos="0.113 1.0 0.05" rot="0.0 87.0 0.0" texture="1 0.7" density="0.5" strength="10" prop="true" file="MOD/vox/components.vox" object="ybox2"/>
-							<group name="bag" pos="0.05 0.59 0.05" rot="0.0 84.0 90.0">
+							<group name="bag" pos="-0.05 0.29 -4.95" rot="0.0 94.0 90.0">
 								<body pos="-0.0866 -0.1 -0.05" dynamic="true">
 									<vox tags="nocull" pos="0.0 0.1 0.1" texture="1 0.3" density="0.5" strength="10" file="MOD/vox/components.vox" object="bag1">
 										<joint pos="0.3 0.2 0.0" type="hinge" limits="-100 0"/>
@@ -911,7 +911,7 @@
 			<vox pos="5.5 0.0 -2.55" rot="0.0 90.0 0.0" texture="25" file="MOD/vox/components.vox" object="pipe" color="0.85 0.85 0.85" pbr="0.2 0.2 0.2 0"/>
 			<vox pos="4.3 0.6 -6.1" rot="0.0 180.0 0.0" texture="25" file="MOD/vox/components.vox" object="cc2"/>
 			<vox pos="14.1 5.0 -0.1" texture="14" file="MOD/vox/components.vox" object="croom1">
-				<vox pos="-1.7 0.2 0.0" rot="0.0 180.0 0.0" texture="1 0.3" file="MOD/vox/components.vox" object="makett"/>
+				<vox pos="-1.7 0.2 0.0" rot="0.0 180.0 0.0" texture="1 0.3" strength="5" file="MOD/vox/components.vox" object="makett"/>
 				<vox pos="-3.4 0.2 7.1" rot="0.0 70.0 0.0" texture="14" strength="2" prop="true" file="MOD/vox/components.vox" object="boss"/>
 				<vox pos="-2.0 0.2 7.4" rot="0.0 180.0 0.0" texture="14" prop="true" file="MOD/vox/bedroom_oldie.vox" object="tv_table"/>
 				<group name="control panel" pos="4.8 0.2 5.6">
@@ -978,7 +978,7 @@
 					<vox tags="triggermainportal1 interact lightTrig" pos="40.85 5.6 15.25" rot="0.0 90.0 0.0" texture="14" file="MOD/vox/extra.vox" object="trigger2"/>
 				</script>
 				<group name="instance=MOD/prefabs/vmdesktop.xml" pos="2.9 0.2 1.9" rot="0.0 90.0 0.0">
-					<vox pos="0.3 0.0 0.1" rot="0.0 180.0 0.0" texture="1 0.25" density="3" prop="true" file="MOD/vox/room.vox" object="desk">
+					<vox pos="0.3 0.0 0.1" rot="0.0 180.0 0.0" texture="1 0.4" density="8" prop="true" file="MOD/vox/room.vox" object="desk">
 						<vox pos="0.3 0.2 -0.7" texture="1 0.25" prop="true" file="MOD/vox/room.vox" object="desk-drawer">
 							<joint pos="0.0 0.1 0.3" rot="0.0 90.0 0.0" type="prismatic" limits="0 .5"/>
 							<joint pos="0.0 0.1 -0.3" rot="0.0 90.0 0.0" type="prismatic" limits="0 .5"/>
@@ -1000,12 +1000,6 @@
 						</vox>
 						<joint pos="0.05 0.4 -0.05" rot="-90.0 0.0 0.0" type="hinge" rotstrength="0.0001" rotspring="0"/>
 					</vox>
-					<vox pos="-3.4 0.0 0.2" rot="0.0 110.0 0.0" texture="1 0.25" density="3" prop="true" file="MOD/vox/room.vox" object="officechair-stand">
-						<vox pos="0.05 0.4 0.0" rot="0.0 0.0 0.0" texture="1 0.25" density="3" prop="true" file="MOD/vox/room.vox" object="officechair-seat">
-							<vox pos="0.3 0.2 0.0" rot="0.0 0.0 -10.0" texture="14" blendtexture="3" density="3" file="MOD/vox/room.vox" object="officechair-backrest"/>
-						</vox>
-						<joint pos="0.05 0.4 -0.05" rot="-90.0 0.0 0.0" type="hinge" rotstrength="0.0001" rotspring="0"/>
-					</vox>
 					<vox pos="0.1 0.0 -0.6" rot="0.0 -90.0 0.0" density="3" strength="3" prop="true" file="MOD/vox/office_supplies.vox" object="computer"/>
 					<group name="Monitor1" pos="0.7 0.9 -0.4" rot="0.0 -70.0 0.0">
 						<script rot="-5.0 0.0 0.0" file="MOD/scripts/InteractWithScreen.lua">
@@ -1015,12 +1009,12 @@
 								</vox>
 								<group pos="0.0 0.4 -0.1" rot="-5.0 0.0 0.0">
 									<vox pos="-0.05 -0.1 0.275" rot="0.0 0.0 0.0" density="5" strength="3" file="MOD/vox/electronics.vox" object="monitor1-screen">
-										<screen tags="screen password=async username=User#18002 userIcon=1 state=office" pos="0.05 0.2 0.0" rot="0.0 0.0 0.0" size="0.5 0.4" bulge="0.025" resolution="1024 712" script="MOD/scripts/DesktopScreen.lua" enabled="true" interactive="true" fxraster="0.1" fxnoise="0.1">
+										<screen tags="screen password=async username=User#18002 userIcon=1 state=office" pos="0.05 0.2 0.0" rot="0.0 0.0 0.0" size="0.5 0.4" bulge="0.03" resolution="1024 768" script="MOD/scripts/DesktopScreen.lua" enabled="true" interactive="true" fxraster="0.1" fxnoise="0.1" fxglitch="0.2">
 											<light pos="0.0 0.0 0.0" type="area" scale="0.2" size="0.5 0.4"/>
 										</screen>
 									</vox>
 									<vox pos="-0.05 -0.2 0.0" rot="0.0 0.0 0.0" texture="14" density="3" strength="3" file="MOD/vox/office_supplies.vox" object="monitor_crt">
-										<vox pos="-0.3 0.4 0.4" rot="-10.2 -11.8 -9.8" desc="Password: async" prop="true" file="MOD/vox/room.vox" object="sticknote"/>
+										<vox pos="-0.29999 3.8 0.4" rot="-10.2 -11.8 -9.8" desc="Password: async" prop="true" file="MOD/vox/room.vox" object="sticknote"/>
 									</vox>
 								</group>
 							</body>
@@ -1033,6 +1027,12 @@
 					<vox pos="-0.15 1.1 -0.4" rot="0.0 -80.0 0.0" texture="14" prop="true" file="MOD/vox/office_supplies.vox" object="keyboard"/>
 					<vox pos="0.10267 1.1 0.17352" rot="0.0 -90.0 0.0" texture="14" prop="true" file="MOD/vox/office_supplies.vox" object="mouse"/>
 				</group>
+				<vox pos="3.0 0.2 5.4" rot="0.0 -160.0 0.0" texture="1 0.25" density="3" prop="true" file="MOD/vox/room.vox" object="officechair-stand">
+					<vox pos="0.05 0.4 0.0" rot="0.0 0.0 0.0" texture="1 0.25" density="3" prop="true" file="MOD/vox/room.vox" object="officechair-seat">
+						<vox pos="0.3 0.2 0.0" rot="0.0 0.0 -10.0" texture="1 0.25" density="3" file="MOD/vox/room.vox" object="officechair-backrest"/>
+					</vox>
+					<joint pos="0.05 0.4 -0.05" rot="-90.0 0.0 0.0" type="hinge" rotstrength="0.0001" rotspring="0"/>
+				</vox>
 				<vox pos="4.8 0.2 1.8" rot="0.0 -130.0 0.0" texture="14" prop="true" file="MOD/vox/potted_plants.vox" object="small_white"/>
 			</vox>
 			<vox pos="0.5 0.0 -6.1" texture="25" file="MOD/vox/components.vox" object="celevator2"/>
