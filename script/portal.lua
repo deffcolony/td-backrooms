@@ -13,9 +13,10 @@ function tick(dt)
 
 	if transitionTimer > 0 then
 
-		local amount = math.min(-0.02*transitionTimer^2+.32*transitionTimer,1)
-		local spamt = math.min(-0.05*transitionTimer^2+1*transitionTimer + .2*(5*math.sin(GetTime())),1)
-		local spamt2 = math.min(-0.02*transitionTimer^2+.33*transitionTimer,1)
+		local amount = math.max(math.min(-0.02*transitionTimer^2+.32*transitionTimer,1),0)+rnd(0,.1)
+		local spamt = math.min(-0.05*transitionTimer^2+1*transitionTimer + .2*(math.sin(5*GetTime())),1)
+		local spamt2 = math.min(-0.02*transitionTimer^2+.34*transitionTimer + .4*(math.sin(5*GetTime())),1)
+		local spamt3 = math.min(-0.02*transitionTimer^2+.33*transitionTimer,1)
 
 		ParticleReset()
 		ParticleEmissive(-1)
@@ -36,13 +37,13 @@ function tick(dt)
 		end
 
 		local sp = LoadSprite("")
-		DrawSprite(sp,Transform(TransformToParentPoint(GetBodyTransform(portal),Vec(.1,2.05,0)),QuatEuler(0,90,0)), 2.3*(1+3*spamt),4.1*(1+4*spamt), 10,20,10,.2*spamt, true, false)
-		DrawSprite(sp,Transform(TransformToParentPoint(GetBodyTransform(portal),Vec(.11,2.05,0)),QuatEuler(0,-90,0)), 2.3*(1+3*spamt2),4.1*(1+4*spamt2), 10,20,10,.5*spamt2, true, false)
-		DrawSprite(sp,Transform(TransformToParentPoint(GetBodyTransform(portal),Vec(.12,2.05,0)),QuatEuler(0,90,0)), 2.3*(1+3*spamt2),4.1*(1+4*spamt2), 10,20,10,spamt2, true, false)
+		DrawSprite(sp,Transform(TransformToParentPoint(GetBodyTransform(portal),Vec(.1,2.05,0)),QuatEuler(0,90,0)), 2.3*(1+3*amount),4.1*(1+4*amount), 10,20,10,.2*spamt, true, false)
+		DrawSprite(sp,Transform(TransformToParentPoint(GetBodyTransform(portal),Vec(.11,2.05,0)),QuatEuler(0,-90,0)), 2.3*(1+3*amount),4.1*(1+4*amount), 10,20,10,.5*spamt2, true, false)
+		DrawSprite(sp,Transform(TransformToParentPoint(GetBodyTransform(portal),Vec(.12,2.05,0)),QuatEuler(0,90,0)), 2.3*(1+3*amount),4.1*(1+4*amount), 10,20,10,spamt2, true, false)
 
 		local tp = GetRandomPortalPos()
 		local dist = VecLength(VecSub(GetCameraTransform().pos,tp))
-		ShakeCamera(math.min(3*amount/dist),.8))
+		ShakeCamera(math.min(3*amount/dist),.8)
 
 		transitionTimer = transitionTimer - dt
 
