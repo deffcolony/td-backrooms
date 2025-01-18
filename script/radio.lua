@@ -12,11 +12,11 @@ staticDuration = 3  -- Statikus hang hossza másodpercben
 staticTimer = 0  -- Statikus hang időzítője
 isPlayingStatic = false  -- Jelzi, hogy éppen statikus hangot játszik-e
 --                                            JUST ADD "SONG.OGG" FILES BELOW AND COPY THE FILE IN THE "RADIO" FOLDER THE SCRIPT HANDLES THE REST
-songs ={"MOD/sounds/aihellout.ogg",
-        "MOD/sounds/radio_backrooms_aihell2.ogg",
-        "MOD/sounds/aihell3.ogg",
-		"MOD/sounds/radio_backrooms_the_place.ogg",
-		"MOD/sounds/radio_backrooms_the_monster.ogg"}
+songs ={"MOD/sounds/music/radio/MUS_Radio_Track_1.ogg",
+        "MOD/sounds/music/radio/MUS_Radio_Track_2.ogg",
+        "MOD/sounds/music/radio/aihell3.ogg",
+		    "MOD/sounds/music/radio/MUS_Radio_Track_Unknown_2.ogg",
+		    "MOD/sounds/music/radio/MUS_Radio_Track_Warp_3.ogg"}
 
 function init()
   channels = {}
@@ -24,11 +24,11 @@ function init()
     channels[i] = LoadLoop(songs[i])
   end
   breakSound = LoadSound("radioBreaksSound.ogg")
-  nextSongSound = LoadSound("MOD/sounds/RadioNextSongSound.ogg")
-  OnOffSound = LoadSound("MOD/sounds/harryhouseknradioONOFF")
+  nextSongSound = LoadSound("MOD/sounds/music/radio/effects/BTN_radio_next.ogg")
+  OnOffSound = LoadSound("MOD/sounds/music/radio/harryhouseknradioONOFF")
   trigger = FindTrigger("trigger")
   trigger2 = FindTrigger("trigger2")
-  static = LoadLoop("MOD/sounds/Radio_Static_Loop_05.ogg")
+  static = LoadLoop("MOD/sounds/music/radio/effects/Radio_Static_Loop_05.ogg")
 
   myRadio = FindShape("myradio", true)
   powerbutton = FindShape("radiopowerbutton", true)

@@ -7,8 +7,8 @@ function init()
 
 	lightTrig = HasTag(button, "lightTrig")
 
-	onSound = LoadSound(GetStringParam("onSound", "MOD/sounds/onSound.ogg"))
-	offSound = LoadSound(GetStringParam("offSound", "MOD/sounds/offSound.ogg"))
+	onSound = LoadSound(GetStringParam("onSound", "MOD/sounds/BTN_light_switch_on.ogg"))
+	offSound = LoadSound(GetStringParam("offSound", "MOD/sounds/BTN_light_switch_off.ogg"))
 	volume = GetFloatParam("volume", 0.5)
 
 	if button == 0 then 

@@ -16,7 +16,7 @@ function init()
 	clickUp = LoadSound("clickup.ogg")
 	clickDown = LoadSound("clickdown.ogg")
 	chime = LoadSound("elevator-chime.ogg")
-	motorSound = LoadLoop("MOD/sounds/eloop.ogg")
+	motorSound = LoadLoop("MOD/sounds/env/elevators/eloop.ogg")
 	cabin = FindBody("cabin",true)
 	
 	for i=1,#down do

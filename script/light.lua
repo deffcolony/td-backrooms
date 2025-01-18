@@ -17,8 +17,8 @@ function init()
 	SetLightEnabled(light, false)
 
 	local r = math.random(1, 6)
-	startSound = LoadLoop(string.format("MOD/sounds/lampStarts%d.ogg", r))
-	workSound = LoadLoop(GetStringParam("lampWorkSound", "MOD/sounds/lampWorks.ogg"), 1.5)
+	startSound = LoadLoop(string.format("MOD/sounds/env/lights/lampStarts%d.ogg", r))
+	workSound = LoadLoop(GetStringParam("lampWorkSound", "MOD/sounds/light_hum_1.ogg"), 1.5)
 end
 
 function rnd(mi, ma)

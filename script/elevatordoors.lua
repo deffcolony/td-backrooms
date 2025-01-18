@@ -20,7 +20,7 @@ function init()
 	eps = 0.2
 	timer = 0
 	
-    doors = LoadSound("MOD/sounds/eloop.ogg")
+    doors = LoadSound("MOD/sounds/env/elevators/edoor.ogg")
 	
 	FloorG = FindShapes("FloorG",true)
 	Floor1 = FindShapes("Floor1",true)
