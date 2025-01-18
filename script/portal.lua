@@ -2,6 +2,7 @@
 function init()
 	portal = FindBody("portal")
 	transitionTimer = 0
+	button = FindShape("button")
 end
 
 function rnd(mi, ma)
@@ -22,7 +23,7 @@ function tick(dt)
 		ParticleEmissive(-1)
 		ParticleRadius(rnd(0.1,0.2), 0.5, "smooth")
 		-- local m = rnd(.6,.9)
-		ParticleColor(rnd(.4,.3),rnd(.15,.2),rnd(.1,.15))
+		ParticleColor(0.9,0.9,rnd(0.1,0.7))
 		ParticleTile(3)
 		ParticleType("smoke")
 		ParticleGravity(0)
@@ -37,9 +38,9 @@ function tick(dt)
 		end
 
 		local sp = LoadSprite("")
-		DrawSprite(sp,Transform(TransformToParentPoint(GetBodyTransform(portal),Vec(.1,2.05,0)),QuatEuler(0,90,0)), 2.3*(1+3*amount),4.1*(1+4*amount), 10,20,10,.2*spamt, true, false)
-		DrawSprite(sp,Transform(TransformToParentPoint(GetBodyTransform(portal),Vec(.11,2.05,0)),QuatEuler(0,-90,0)), 2.3*(1+3*amount),4.1*(1+4*amount), 10,20,10,.5*spamt2, true, false)
-		DrawSprite(sp,Transform(TransformToParentPoint(GetBodyTransform(portal),Vec(.12,2.05,0)),QuatEuler(0,90,0)), 2.3*(1+3*amount),4.1*(1+4*amount), 10,20,10,spamt2, true, false)
+		--DrawSprite(sp,Transform(TransformToParentPoint(GetBodyTransform(portal),Vec(.1,2.05,0)),QuatEuler(0,90,0)), 2.3*(1+3*amount),4.1*(1+4*amount), 10,20,10,.2*spamt, true, false)
+		--DrawSprite(sp,Transform(TransformToParentPoint(GetBodyTransform(portal),Vec(.11,2.05,0)),QuatEuler(0,-90,0)), 2.3*(1+3*amount),4.1*(1+4*amount), 10,20,10,.5*spamt2, true, false)
+		--DrawSprite(sp,Transform(TransformToParentPoint(GetBodyTransform(portal),Vec(.12,2.05,0)),QuatEuler(0,90,0)), 2.3*(1+3*amount),4.1*(1+4*amount), 10,20,10,spamt2, true, false)
 
 		local tp = GetRandomPortalPos()
 		local dist = VecLength(VecSub(GetCameraTransform().pos,tp))
@@ -59,7 +60,7 @@ function tick(dt)
 		ParticleReset()
 		ParticleEmissive(0.1)
 		ParticleRadius(rnd(0.03,0.4), 0.1, "smooth")
-		ParticleColor(0.9,0.9,rnd(0.2,0.6))
+		ParticleColor(0.9,0.9,rnd(0.1,0.7))
 		ParticleTile(1)
 		ParticleType("smoke")
 		ParticleGravity(0)
@@ -95,9 +96,13 @@ function tick(dt)
 			--PointLight(tipPos3, 0.9,0.9,rnd(0.1,0.7), 0.03)
 		end	
 
-		if InputPressed("n") then
+		--if InputPressed("n") then
+			--transitionTimer = 20
+		--end
+		
+		if GetPlayerInteractShape() == button and InputPressed("interact") then
 			transitionTimer = 20
-		end
+		end		
 
 	end
 

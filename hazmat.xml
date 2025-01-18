@@ -1,5 +1,5 @@
 <prefab version="1.4.0">
-	<group name="instance=MOD/hazmat.xml" pos="-14.0 3.3 23.8" rot="0.0 180.0 0.0">
+	<group name="instance=MOD/hazmat.xml" pos="-14.5 2.7 23.8" rot="0.0 180.0 0.0">
 		<script pos="0.1 0.0 -0.1" rot="0.0 90.0 0.0" file="MOD/script/robot.lua" param0="type=investigate chase">
 			<body name="body" tags="body" pos="-0.05 1.0 0.0" rot="0.0 0.0 0.0" dynamic="true">
 				<vox tags="nocull target9" pos="0.05 -0.15 0.1" rot="0 180 0" texture="1 0.5" density="20" strength="999999999999999999999999999" file="MOD/vox/components.vox" object="hbody"/>
