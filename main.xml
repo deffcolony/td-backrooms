@@ -3,8 +3,8 @@
 		<script pos="-77.3 0.1 33.8" file="MOD/main.lua">
 			<trigger tags="trig" pos="0.0 0.0 0.0" type="box" size="2 2 2 "/>
 		</script>
-		<trigger tags="boxx" pos="-4.3 -1.1 2.8" type="box" size="100 2 145" sound="MOD/sounds/AMB_lvl4_the_lobby.ogg 4" soundramp="10"/>
-		<trigger pos="-3.0 6.3 -12.4" type="box" size="80 2 100" sound="MOD/sounds/AMB_lvl4_the_lobby.ogg 4" soundramp="10"/>
+		<trigger tags="boxx" pos="-4.3 -1.1 2.8" type="box" size="100 2 145" sound="MOD/sounds/ambiences/AMB_lvl4_the_lobby.ogg 4" soundramp="10"/>
+		<trigger pos="-3.0 6.3 -12.4" type="box" size="80 2 100" sound="MOD/sounds/ambiences/AMB_lvl4_the_lobby.ogg 4" soundramp="10"/>
 	</environment>
 	<script pos="-0.3 2.6 -0.2" file="main.lua"/>
 	<script pos="-0.3 2.6 -0.2" file="sandbox.lua"/>
@@ -7056,7 +7056,7 @@
 		<group name="instance=MOD/assets/industrial/lamp-ceiling-fixed.xml" pos="-58.95 14.4 52.9" rot="0.0 90.0 0.0">
 			<script pos="2.7 0.1 0.0" file="MOD/script/light.lua" param0="lampStartSound=MOD/sounds/env/lights/lampStarts1.ogg" param1="buttonTag=triggermainlvl4">
 				<vox tags="body nocull" pos="0.0 0.0 0.1" file="MOD/vox/lamps.vox" object="ceiling-fixed">
-					<light tags="light nocull" pos="0.0 0.0 -0.05" rot="90.0 0.0 0.0" type="area" scale="4" size="1.4 0.1" sound="MOD/sounds/light_hum_1.ogg"/>
+					<light tags="light nocull" pos="0.0 0.0 -0.05" rot="90.0 0.0 0.0" type="area" scale="4" size="1.4 0.1" sound="MOD/sounds/env/lights/light_hum_1.ogg"/>
 				</vox>
 			</script>
 		</group>
@@ -7107,70 +7107,70 @@
 		<group name="instance=MOD/assets/industrial/lamp-ceiling-fixed.xml" pos="-58.95 14.4 64.3" rot="0.0 90.0 0.0">
 			<script pos="2.7 0.1 0.0" file="MOD/script/light.lua" param0="lampStartSound=MOD/sounds/env/lights/lampStarts1.ogg" param1="buttonTag=triggermainlvl4">
 				<vox tags="body nocull" pos="0.0 0.0 0.1" file="MOD/vox/lamps.vox" object="ceiling-fixed">
-					<light tags="light nocull" pos="0.0 0.0 -0.05" rot="90.0 0.0 0.0" type="area" scale="4" size="1.4 0.1" sound="MOD/sounds/light_hum_1.ogg"/>
+					<light tags="light nocull" pos="0.0 0.0 -0.05" rot="90.0 0.0 0.0" type="area" scale="4" size="1.4 0.1" sound="MOD/sounds/env/lights/light_hum_1.ogg"/>
 				</vox>
 			</script>
 		</group>
 		<group name="instance=MOD/assets/industrial/lamp-ceiling-fixed.xml" pos="-58.95 14.4 70.1" rot="0.0 90.0 0.0">
 			<script pos="2.7 0.1 0.0" file="MOD/script/light.lua" param0="lampStartSound=MOD/sounds/env/lights/lampStarts1.ogg" param1="buttonTag=triggermainlvl4">
 				<vox tags="body nocull" pos="0.0 0.0 0.1" file="MOD/vox/lamps.vox" object="ceiling-fixed">
-					<light tags="light nocull" pos="0.0 0.0 -0.05" rot="90.0 0.0 0.0" type="area" scale="4" size="1.4 0.1" sound="MOD/sounds/light_hum_1.ogg"/>
+					<light tags="light nocull" pos="0.0 0.0 -0.05" rot="90.0 0.0 0.0" type="area" scale="4" size="1.4 0.1" sound="MOD/sounds/env/lights/light_hum_1.ogg"/>
 				</vox>
 			</script>
 		</group>
 		<group name="instance=MOD/assets/industrial/lamp-ceiling-fixed.xml" pos="-58.95 14.4 44.3" rot="0.0 90.0 0.0">
 			<script pos="2.7 0.1 0.0" file="MOD/script/light.lua" param0="lampStartSound=MOD/sounds/env/lights/lampStarts1.ogg" param1="buttonTag=triggermainlvl4">
 				<vox tags="body nocull" pos="0.0 0.0 0.1" file="MOD/vox/lamps.vox" object="ceiling-fixed">
-					<light tags="light nocull" pos="0.0 0.0 -0.05" rot="90.0 0.0 0.0" type="area" scale="4" size="1.4 0.1" sound="MOD/sounds/light_hum_1.ogg"/>
+					<light tags="light nocull" pos="0.0 0.0 -0.05" rot="90.0 0.0 0.0" type="area" scale="4" size="1.4 0.1" sound="MOD/sounds/env/lights/light_hum_1.ogg"/>
 				</vox>
 			</script>
 		</group>
 		<group name="instance=MOD/assets/industrial/lamp-ceiling-fixed.xml" pos="-58.95 14.4 36.2" rot="0.0 90.0 0.0">
 			<script pos="2.7 0.1 0.0" file="MOD/script/light.lua" param0="lampStartSound=MOD/sounds/env/lights/lampStarts1.ogg" param1="buttonTag=triggermainlvl4">
 				<vox tags="body nocull" pos="0.0 0.0 0.1" file="MOD/vox/lamps.vox" object="ceiling-fixed">
-					<light tags="light nocull" pos="0.0 0.0 -0.05" rot="90.0 0.0 0.0" type="area" scale="4" size="1.4 0.1" sound="MOD/sounds/light_hum_1.ogg"/>
+					<light tags="light nocull" pos="0.0 0.0 -0.05" rot="90.0 0.0 0.0" type="area" scale="4" size="1.4 0.1" sound="MOD/sounds/env/lights/light_hum_1.ogg"/>
 				</vox>
 			</script>
 		</group>
 		<group name="instance=MOD/assets/industrial/lamp-ceiling-fixed.xml" pos="-49.25 14.4 41.4" rot="0.0 90.0 0.0">
 			<script pos="2.7 0.1 0.0" file="MOD/script/light.lua" param0="lampStartSound=MOD/sounds/env/lights/lampStarts1.ogg" param1="buttonTag=triggermain1lvl4">
 				<vox tags="body nocull" pos="0.0 0.0 0.1" file="MOD/vox/lamps.vox" object="ceiling-fixed">
-					<light tags="light nocull" pos="0.0 0.0 -0.05" rot="90.0 0.0 0.0" type="area" scale="4" size="1.4 0.1" sound="MOD/sounds/light_hum_1.ogg"/>
+					<light tags="light nocull" pos="0.0 0.0 -0.05" rot="90.0 0.0 0.0" type="area" scale="4" size="1.4 0.1" sound="MOD/sounds/env/lights/light_hum_1.ogg"/>
 				</vox>
 			</script>
 		</group>
 		<group name="instance=MOD/assets/industrial/lamp-ceiling-fixed.xml" pos="-49.25 14.4 36.7" rot="0.0 90.0 0.0">
 			<script pos="2.7 0.1 0.0" file="MOD/script/light.lua" param0="lampStartSound=MOD/sounds/env/lights/lampStarts1.ogg" param1="buttonTag=triggermain1lvl4">
 				<vox tags="body nocull" pos="0.0 0.0 0.1" file="MOD/vox/lamps.vox" object="ceiling-fixed">
-					<light tags="light nocull" pos="0.0 0.0 -0.05" rot="90.0 0.0 0.0" type="area" scale="4" size="1.4 0.1" sound="MOD/sounds/light_hum_1.ogg"/>
+					<light tags="light nocull" pos="0.0 0.0 -0.05" rot="90.0 0.0 0.0" type="area" scale="4" size="1.4 0.1" sound="MOD/sounds/env/lights/light_hum_1.ogg"/>
 				</vox>
 			</script>
 		</group>
 		<group name="instance=MOD/assets/industrial/lamp-ceiling-fixed.xml" pos="-49.25 14.4 28.3" rot="0.0 90.0 0.0">
 			<script pos="2.7 0.1 0.0" file="MOD/script/light.lua" param0="lampStartSound=MOD/sounds/env/lights/lampStarts1.ogg" param1="buttonTag=triggermain1lvl4">
 				<vox tags="body nocull" pos="0.0 0.0 0.1" file="MOD/vox/lamps.vox" object="ceiling-fixed">
-					<light tags="light nocull" pos="0.0 0.0 -0.05" rot="90.0 0.0 0.0" type="area" scale="4" size="1.4 0.1" sound="MOD/sounds/light_hum_1.ogg"/>
+					<light tags="light nocull" pos="0.0 0.0 -0.05" rot="90.0 0.0 0.0" type="area" scale="4" size="1.4 0.1" sound="MOD/sounds/env/lights/light_hum_1.ogg"/>
 				</vox>
 			</script>
 		</group>
 		<group name="instance=MOD/assets/industrial/lamp-ceiling-fixed.xml" pos="-39.45 14.4 28.2" rot="0.0 90.0 0.0">
 			<script pos="2.7 0.1 0.0" file="MOD/script/light.lua" param0="lampStartSound=MOD/sounds/env/lights/lampStarts1.ogg" param1="buttonTag=triggermain1lvl4">
 				<vox tags="body nocull" pos="-0.1 0.0 0.1" file="MOD/vox/lamps.vox" object="ceiling-fixed">
-					<light tags="light nocull" pos="0.0 0.0 -0.05" rot="90.0 0.0 0.0" type="area" scale="4" size="1.4 0.1" sound="MOD/sounds/light_hum_1.ogg"/>
+					<light tags="light nocull" pos="0.0 0.0 -0.05" rot="90.0 0.0 0.0" type="area" scale="4" size="1.4 0.1" sound="MOD/sounds/env/lights/light_hum_1.ogg"/>
 				</vox>
 			</script>
 		</group>
 		<group name="instance=MOD/assets/industrial/lamp-ceiling-fixed.xml" pos="-39.45 14.4 35.7" rot="0.0 90.0 0.0">
 			<script pos="2.7 0.1 0.0" file="MOD/script/light.lua" param0="lampStartSound=MOD/sounds/env/lights/lampStarts1.ogg" param1="buttonTag=triggermain1lvl4">
 				<vox tags="body nocull" pos="-0.1 0.0 0.1" file="MOD/vox/lamps.vox" object="ceiling-fixed">
-					<light tags="light nocull" pos="0.0 0.0 -0.05" rot="90.0 0.0 0.0" type="area" scale="4" size="1.4 0.1" sound="MOD/sounds/light_hum_1.ogg"/>
+					<light tags="light nocull" pos="0.0 0.0 -0.05" rot="90.0 0.0 0.0" type="area" scale="4" size="1.4 0.1" sound="MOD/sounds/env/lights/light_hum_1.ogg"/>
 				</vox>
 			</script>
 		</group>
 		<group name="instance=MOD/assets/industrial/lamp-ceiling-fixed.xml" pos="-39.45 14.4 41.2" rot="0.0 90.0 0.0">
 			<script pos="2.7 0.1 0.0" file="MOD/script/light.lua" param0="lampStartSound=MOD/sounds/env/lights/lampStarts1.ogg" param1="buttonTag=triggermain1lvl4">
 				<vox tags="body nocull" pos="-0.2 0.0 0.1" file="MOD/vox/lamps.vox" object="ceiling-fixed">
-					<light tags="light nocull" pos="0.0 0.0 -0.05" rot="90.0 0.0 0.0" type="area" scale="4" size="1.4 0.1" sound="MOD/sounds/light_hum_1.ogg"/>
+					<light tags="light nocull" pos="0.0 0.0 -0.05" rot="90.0 0.0 0.0" type="area" scale="4" size="1.4 0.1" sound="MOD/sounds/env/lights/light_hum_1.ogg"/>
 				</vox>
 			</script>
 		</group>
@@ -7189,7 +7189,7 @@
 					<vox name="on/off" tags="radiopowerbutton interact" pos="-0.01 0.32 0.15" desc="on/off" texture="2 0.7" file="MOD/vox/small_kitchen_props.vox" object="radio button on/off"/>
 					<vox name="volume up" tags="radiovolupbutton interact" pos="-0.01 0.32 -0.05" desc="Searching next frequency" texture="2 0.7" file="MOD/vox/small_kitchen_props.vox" object="radio button volume"/>
 				</vox>
-				<trigger tags="trigger" pos="-18.4 0.4 3.1" rot="0.0 -70.0 0.0" type="polygon" size="3" sound="--MOD/sounds/MUS_Radio_Track_1.ogg 0.4" soundramp="8">
+				<trigger tags="trigger" pos="-18.4 0.4 3.1" rot="0.0 -70.0 0.0" type="polygon" size="3" sound="--MOD/sounds/music/radio/MUS_Radio_Track_1.ogg 0.4" soundramp="8">
 					<vertex pos="-3.3 -19.5"/>
 					<vertex pos="6.4 -19.5"/>
 					<vertex pos="6.4 -28.1"/>
@@ -7199,7 +7199,7 @@
 					<vertex pos="3.5 19.6"/>
 					<vertex pos="-3.3 19.5"/>
 				</trigger>
-				<trigger tags="trigger2" pos="-0.8 -11.5 -19.8" rot="0.0 20.0 0.0" type="box" size="40 20 20" sound="--MOD/sounds/MUS_Radio_Track_1.ogg 0.4" soundramp="8"/>
+				<trigger tags="trigger2" pos="-0.8 -11.5 -19.8" rot="0.0 20.0 0.0" type="box" size="40 20 20" sound="--MOD/sounds/music/radio/MUS_Radio_Track_1.ogg 0.4" soundramp="8"/>
 			</script>
 		</group>
 	</group>
