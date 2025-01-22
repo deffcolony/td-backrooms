@@ -1,12 +1,12 @@
 <prefab version="1.4.0">
-	<group name="instance=MOD/hazmat2.xml" pos="-10.7 3.3 23.8" rot="0.0 -180.0 0.0">
-		<script pos="0.1 0.0 -0.1" rot="0.0 90.0 0.0" file="MOD/script/robot.lua" param0="type=investigate chase">
+	<group name="instance=MOD/prefabs/friendly/hazmat2.xml" pos="-10.7 3.3 23.8" rot="0.0 -180.0 0.0">
+		<script pos="0.1 0.0 -0.1" rot="0.0 90.0 0.0" file="MOD/scripts/robot.lua" param0="type=investigate chase">
 			<body name="body" tags="body" pos="-0.05 1.0 0.0" rot="0.0 0.0 0.0" dynamic="true">
 				<vox tags="nocull unbreakable" pos="0.05 -0.15 0.1" rot="0 180 0" texture="1 0.5" density="10" strength="999999999999999999999999999" file="MOD/vox/components.vox" object="hbody"/>
 			</body>
 			<body name="head" tags="head" pos="-0.1 1.1 -0.1" rot="0.0 0.0 0.0" dynamic="true">
 				<joint name="head_joint" tags="head" pos="0.05 0.2 0.2" rot="-90.0 90.0 0.0" type="hinge" size="0.15" limits="-45 45"/>
-				<script pos="0.1 -0.1 0.2" file="MOD/script/fxmy.lua">
+				<script pos="0.1 -0.1 0.2" file="MOD/scripts/fxmy.lua">
 					<vox tags="nocull fxbreak=l4red target unbreakable" pos="0.0 0.15 0.0" rot="0 180 0" texture="1 0.5" density="0.25" strength="999999999999999999999999999" file="MOD/vox/components.vox" object="hhead">
 						<vox tags="target1" pos="0.0 1.0 0.0" texture="12 0.8" strength="999999999999999999999999999" file="MOD/vox/components.vox" object="trg1"/>
 						<vox tags="target2" pos="0.1 0.6 0.1" texture="12 0.8" strength="999999999999999999999999999" file="MOD/vox/components.vox" object="trg1"/>

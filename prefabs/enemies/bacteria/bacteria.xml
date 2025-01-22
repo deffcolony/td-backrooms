@@ -1,6 +1,6 @@
 <prefab version="1.6.2">
-	<group name="instance=MOD/bacteria.xml" pos="40.20002 9.1 -22.9" rot="0.0 -90.0 0.0">
-		<script pos="0.0 0.0 0.1" rot="0.0 -90.0 0.0" file="MOD/script/bacteria.lua" param0="type=investigate chase">
+	<group name="instance=MOD/prefabs/enemies/bacteria/bacteria.xml" pos="40.20002 9.1 -22.9" rot="0.0 -90.0 0.0">
+		<script pos="0.0 0.0 0.1" rot="0.0 -90.0 0.0" file="MOD/scripts/enemies/bacteria/bacteria.lua" param0="type=investigate chase">
 			<body name="body" tags="body" pos="-0.05 1.2 0.0" rot="0.0 0.0 0.0" dynamic="true">
 				<vox tags="unbreakable" pos="0.05 0.6 0.1" rot="0 -180.0 0.0" texture="12" density="40" file="MOD/vox/components.vox" object="bbody"/>
 			</body>

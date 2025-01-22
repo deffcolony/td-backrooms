@@ -27,14 +27,14 @@
 		<vox pos="0.3 0.9 -0.4" rot="0.0 -80.0 0.0" prop="true" file="MOD/vox/electronics.vox" object="keyboard"/>
 		<vox pos="0.6 0.9 0.1" rot="0.0 -60.0 0.0" prop="true" file="MOD/vox/electronics.vox" object="mouse"/>
 		<group name="Monitor1" pos="0.7 0.9 -0.4" rot="0.0 -70.0 0.0">
-			<script rot="-5.0 0.0 0.0" file="MOD/scripts/InteractWithScreen.lua">
+			<script rot="-5.0 0.0 0.0" file="MOD/scripts/computers/InteractWithScreen.lua">
 				<body name="monitor1" pos="0.0 0.0 0.0" rot="5.0 0.0 0.0" dynamic="true">
 					<vox pos="-0.05 0.0 0.0" density="5" strength="3" prop="true" file="MOD/vox/electronics.vox" object="monitor1-stand">
 						<joint pos="0.05 0.4 -0.1" rot="0.0 90.0 0.0" type="hinge" size="0.2" rotstrength="1" rotspring="0.25" limits="-5 5"/>
 					</vox>
 					<group pos="0.0 0.4 -0.1" rot="-5.0 0.0 0.0">
 						<vox pos="-0.05 -0.1 0.175" rot="0.0 0.0 0.0" density="5" strength="3" file="MOD/vox/electronics.vox" object="monitor1-screen">
-							<screen tags="screen password=secret username=User#18002 userIcon=1 state=office" pos="0.05 0.25 0.0" rot="0.0 0.0 0.0" size="0.7 0.5" bulge="0.025" resolution="1024 712" script="MOD/scripts/DesktopScreen.lua" enabled="true" interactive="true" fxraster="0.1" fxnoise="0.1">
+							<screen tags="screen password=secret username=User#18002 userIcon=1 state=office" pos="0.05 0.25 0.0" rot="0.0 0.0 0.0" size="0.7 0.5" bulge="0.025" resolution="1024 712" script="MOD/scripts/computers/DesktopScreen.lua" enabled="true" interactive="true" fxraster="0.1" fxnoise="0.1">
 								<light type="area" scale="0.2" size="0.7 0.5"/>
 							</screen>
 						</vox>

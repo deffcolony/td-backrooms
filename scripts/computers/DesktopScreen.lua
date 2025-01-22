@@ -6,7 +6,7 @@
 
 This script is used to render a desktop on any screen it is placed in
 Any parameters are inputted via the screen's tags
-Warning: you need a seperate script to interact with this screen. There already is one in the example scene "MOD/scripts/InteractWithScreen.lua"
+Warning: you need a seperate script to interact with this screen. There already is one in the example scene "MOD/scripts/computers/InteractWithScreen.lua"
 
 Supported Parameters:
 
@@ -166,7 +166,7 @@ function DesktopInit(stateName) -- 'stateName' is the input from the tag "state"
             "\n" ..
             "The moon icon in the bottom left corner puts the screen into screensaver mode (you've already seen what that looks like)\n" ..
             "\n" ..
-            "The script MOD/scripts/DesktopScreen.lua has some more explainations on what to do to make your own apps", fontSize = 20 }
+            "The script MOD/scripts/computers/DesktopScreen.lua has some more explainations on what to do to make your own apps", fontSize = 20 }
         }
     }
 
@@ -242,7 +242,7 @@ taskbarHeight = 30
 taskbarColour = { 0.25, 0.25, 0.25, 0.5 }
 taskbarIconWidth = 40
 
-spriteBasePath = "MOD/sprites/Desktop/"
+spriteBasePath = "MOD/prefabs/computers/sprites/Desktop/"
 
 screenSaverTime = 120
 screenSaverIcon = spriteBasePath .. "screenSaver.png"
